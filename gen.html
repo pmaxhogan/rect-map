@@ -13,6 +13,12 @@
       --background-color: #000;
       --accent-color: #71767B;
       --text-color: #E7E9EA;
+
+      --three-dots-display: block;
+    }
+
+    #tweet-three-dots{
+      display: var(--three-dots-display);
     }
 
     body {
@@ -68,7 +74,7 @@
 <body>
 <div data-testid="cellInnerDiv" style="font-size: 15px;background-color: var(--background-color);width: var(--base-width);padding-top: var(--top-spacing);padding-bottom: var(--bottom-spacing);padding-right: var(--right-spacing);padding-left: var(--left-spacing);">
   <article
-    style="align-items: stretch;border: 0px solid black;box-sizing: border-box;display: flex;flex-basis: auto;flex-direction: row;flex-shrink: 0;margin: 0px;min-height: 0px;min-width: 0px;position: relative;z-index: 0;overflow: hidden;outline-style: none;">
+    style="align-items: stretch;box-sizing: border-box;display: flex;flex-basis: auto;flex-direction: row;flex-shrink: 0;margin: 0px;min-height: 0px;min-width: 0px;position: relative;z-index: 0;overflow: hidden;outline-style: none;">
     <div
       style="align-items: stretch; box-sizing: border-box; display: flex; flex: 1 1 auto; flex-direction: column; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; -webkit-box-flex: 1;">
       <div
@@ -117,7 +123,7 @@
                                     style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; background-color: rgb(0, 0, 0); width: 48px; height: 48px;"></div>
                                 </div>
                                 <div
-                                  style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; border-radius: 9999px; overflow: hidden; background-color: rgb(0, 0, 0); left: 26px; top: 26px; transform: translateX(-50%) translateY(-50%); pointer-events: none !important; height: calc(100% - 4px); width: calc(100% - 4px);">
+                                  style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; border-radius: 9999px; overflow: hidden; left: 26px; top: 26px; transform: translateX(-50%) translateY(-50%); pointer-events: none !important; height: calc(100% - 4px); width: calc(100% - 4px);">
                                   <div
                                     style="align-items: stretch; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; overflow: hidden;">
                                     <div style="width: 48px; padding-bottom: 48px;"></div>
@@ -135,7 +141,7 @@
                                 <div
                                   style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; border-radius: 9999px; overflow: hidden; left: 26px; top: 26px; transform: translateX(-50%) translateY(-50%); height: calc(100% - 4px); width: calc(100% - 4px);">
                                   <div
-                                    style="align-items: stretch;border: 0px solid black;box-sizing: border-box;display: flex;flex-basis: auto;flex-direction: column;flex-shrink: 0;margin: 0px;min-height: 0px;min-width: 0px;padding: 0px;position: relative;z-index: 0;width: 48px;height: 48px;outline-style: none;box-shadow: rgba(255, 255, 255, 0.03) 0px 0px 2px inset;"></div>
+                                    style="align-items: stretch;box-sizing: border-box;display: flex;flex-basis: auto;flex-direction: column;flex-shrink: 0;margin: 0px;min-height: 0px;min-width: 0px;padding: 0px;position: relative;z-index: 0;width: 48px;height: 48px;outline-style: none;box-shadow: rgba(255, 255, 255, 0.03) 0px 0px 2px inset;"></div>
                                 </div>
                               </span></div>
                           </div>
@@ -160,7 +166,7 @@
                         style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%; outline-style: none;">
                         <div data-testid="User-Names"
                              style="-webkit-box-align: center; -webkit-box-orient: horizontal; align-items: center; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%; outline-style: none;">
-                          <div
+                          <div id="tweet-names"
                             style="-webkit-box-align: center; -webkit-box-orient: horizontal; align-items: center; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%;">
                             <div
                               style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%;">
@@ -177,22 +183,22 @@
                                   </div>
                                 </div>
                               </span></div>
-                          </div>
-                          <div
-                            style="-webkit-box-orient: horizontal; align-items: stretch; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px 0px 0px 4px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
                             <div
-                              style="-webkit-box-align: baseline; -webkit-box-orient: horizontal; align-items: baseline; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
-                              <div
-                                style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%;">
+                              style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%;">
                                 <span
                                   style="background-color: rgba(0, 0, 0, 0); list-style: none; margin: 0px; text-align: inherit; text-decoration-line: none; cursor: pointer; align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%; outline-style: none;">
                                   <div dir="ltr"
-                                       style="color: var(--accent-color); display: inline; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 20px; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; margin: 0px; padding: 0px; white-space: nowrap; overflow-wrap: break-word; max-width: 100%; overflow: hidden; text-overflow: ellipsis; min-width: 0px; -webkit-box-orient: horizontal; flex-direction: row;">
+                                       style="color: var(--accent-color); display: inline; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 20px; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; margin: 0px 0px 0px 4px; padding: 0px; white-space: nowrap; overflow-wrap: break-word; max-width: 100%; overflow: hidden; text-overflow: ellipsis; min-width: 0px; -webkit-box-orient: horizontal; flex-direction: row;">
                                     <span
                                       style="color: inherit; display: inline; margin: 0px; padding: 0px; white-space: inherit; overflow-wrap: break-word; min-width: 0px;"
                                       id="tweet-at">@LinusTech</span>
                                   </div>
                                 </span></div>
+                          </div>
+                          <div
+                            style="-webkit-box-orient: horizontal; align-items: stretch; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
+                            <div
+                              style="-webkit-box-align: baseline; -webkit-box-orient: horizontal; align-items: baseline; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
                               <div dir="auto" aria-hidden="true"
                                    style="color: var(--accent-color); display: inline; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 20px; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; margin: 0px; padding: 0px 4px; overflow-wrap: break-word; min-width: 0px; flex-shrink: 0;">
                                 <span
@@ -220,11 +226,11 @@
                                  data-testid="caret"
                                  style="cursor: pointer; align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 20px; min-width: 0px; padding: 0px; position: relative; overflow: visible; user-select: none; -webkit-box-pack: center; justify-content: center; outline-style: none;">
                               <div dir="ltr"
-                                   style="border: 0px solid black;box-sizing: border-box;color: var(--accent-color);display: flex;font-variant-numeric: normal;font-variant-east-asian: normal;font-stretch: normal;line-height: 20px;font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif;margin: 0px;padding: 0px;white-space: nowrap;overflow-wrap: break-word;min-width: 0px;-webkit-box-align: center;align-items: center;-webkit-box-pack: start;justify-content: flex-start;">
-                                <div
-                                  style="align-items: stretch;border: 0px solid black;box-sizing: border-box;display: inline-flex;flex-basis: auto;flex-direction: column;flex-shrink: 0;margin: 0px;min-height: 0px;min-width: 0px;padding: 0px;position: relative;z-index: 0;">
+                                   style="box-sizing: border-box;color: var(--accent-color);display: flex;font-variant-numeric: normal;font-variant-east-asian: normal;font-stretch: normal;line-height: 20px;font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif;margin: 0px;padding: 0px;white-space: nowrap;overflow-wrap: break-word;min-width: 0px;-webkit-box-align: center;align-items: center;-webkit-box-pack: start;justify-content: flex-start;">
+                                <div id="tweet-three-dots"
+                                  style="align-items: stretch;box-sizing: border-box;flex-basis: auto;flex-direction: column;flex-shrink: 0;margin: 0px;min-height: 0px;min-width: 0px;padding: 0px;position: relative;z-index: 0;">
                                   <div
-                                    style="fill: red !important;align-items: stretch;border: 0px solid black;box-sizing: border-box;display: inline-flex;flex-basis: auto;flex-direction: column;flex-shrink: 0;margin: -8px;min-height: 0px;min-width: 0px;padding: 0px;position: absolute;z-index: 0;border-radius: 9999px;inset: 0px;outline-style: none;background-color: rgba(0, 0, 0, 0);"></div>
+                                    style="fill: red !important;align-items: stretch;box-sizing: border-box;display: inline-flex;flex-basis: auto;flex-direction: column;flex-shrink: 0;margin: -8px;min-height: 0px;min-width: 0px;padding: 0px;position: absolute;z-index: 0;border-radius: 9999px;inset: 0px;outline-style: none;background-color: rgba(0, 0, 0, 0);"></div>
                                   <svg viewBox="0 0 24 24" aria-hidden="true" style="-webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0,0,0,0); pointer-events: auto; cursor: pointer; font: 14px -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Helvetica,Arial,sans-serif; word-wrap: break-word; line-height: 20px; font-size: 15px; font-weight: 400; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; white-space: nowrap; display: inline-block; fill: currentcolor; height: 1.25em; max-width: 100%; position: relative; vertical-align: text-bottom; user-select: none; width: 1.25em;
 ">
                                     <g>
