@@ -3,6 +3,18 @@
 <head>
   <meta charset="utf-8">
   <style>
+    :root{
+      --top-spacing: 12px;
+      --bottom-spacing: 12px;
+      --right-spacing: 16px;
+      --left-spacing: 16px;
+      --base-width: 566px;
+
+      --background-color: #000;
+      --accent-color: #71767B;
+      --text-color: #E7E9EA;
+    }
+
     body {
       margin: 0;
     }
@@ -54,80 +66,78 @@
   </style>
 </head>
 <body>
-<div data-testid="cellInnerDiv" style="font-size: 15px;background-color: rgba(0,0,0,1.00);width: 598px;">
+<div data-testid="cellInnerDiv" style="font-size: 15px;background-color: var(--background-color);width: var(--base-width);padding-top: var(--top-spacing);padding-bottom: var(--bottom-spacing);padding-right: var(--right-spacing);padding-left: var(--left-spacing);">
   <article
-    aria-labelledby="id__1uld8aljxgw id__6wb3cr59gbx id__090tgog2g9el id__xnu2mgavo9o id__5hs1ech2jpd id__hlhy0f3kohw id__bb6pumt8kes id__jorymlou62n id__4ae6vs3wpo id__4pklw3qvia9 id__ko24q0g04fb id__rtc1h4l7w0f id__xxiaot9tpm id__sesygekw8u id__j1fgdd9o2zl id__14xhqzmnzzc id__00zdrzgdg0pj id__q32dneq0v2a id__s9nucfp8b"
-    role="article" tabindex="0" data-testid="tweet"
-    style="-webkit-box-direction: normal;-webkit-box-orient: horizontal;align-items: stretch;border: 0px solid black;box-sizing: border-box;display: flex;flex-basis: auto;flex-direction: row;flex-shrink: 0;margin: 0px;min-height: 0px;min-width: 0px;padding: 0px 16px;position: relative;z-index: 0;overflow: hidden;outline-style: none;">
+    style="align-items: stretch;border: 0px solid black;box-sizing: border-box;display: flex;flex-basis: auto;flex-direction: row;flex-shrink: 0;margin: 0px;min-height: 0px;min-width: 0px;position: relative;z-index: 0;overflow: hidden;outline-style: none;">
     <div
-      style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex: 1 1 auto; flex-direction: column; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; -webkit-box-flex: 1;">
+      style="align-items: stretch; box-sizing: border-box; display: flex; flex: 1 1 auto; flex-direction: column; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; -webkit-box-flex: 1;">
       <div
-        style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex: 1 1 auto; flex-direction: column; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; -webkit-box-flex: 1; outline-style: none;">
+        style="align-items: stretch; display: flex; flex: 1 1 auto; flex-direction: column; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; -webkit-box-flex: 1; outline-style: none;">
         <div
-          style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+          style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
           <div
-            style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+            style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
             <div
-              style="-webkit-box-orient: horizontal; align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+              style="-webkit-box-orient: horizontal; align-items: stretch; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
               <div
-                style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex: 1 0 0px; flex-direction: column; margin: 0px; min-height: 0px; min-width: 0px; padding: 12px 0px 0px; position: relative; z-index: 0; -webkit-box-flex: 1;"></div>
+                style="padding: var(--top-padding) 0px 0px;"></div>
             </div>
           </div>
 
           <div
-            style="-webkit-box-orient: horizontal; align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+            style="-webkit-box-orient: horizontal; align-items: stretch; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
             <div
-              style="-webkit-box-align: center; align-items: center; border: 0px solid black; box-sizing: border-box; display: flex; flex: 0 0 48px; flex-direction: column; margin: 0px 12px 0px 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; -webkit-box-flex: 0;">
+              style="-webkit-box-align: center; align-items: center; display: flex; flex: 0 0 48px; flex-direction: column; margin: 0px 12px 0px 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; -webkit-box-flex: 0;">
               <div data-testid="Tweet-User-Avatar"
-                   style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+                   style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
                 <div
-                  style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex: 0 1 auto; flex-direction: column; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; width: 48px; -webkit-box-flex: 0;">
+                  style="align-items: stretch; display: flex; flex: 0 1 auto; flex-direction: column; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; width: 48px; -webkit-box-flex: 0;">
                   <div
-                    style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; max-width: 100%;">
+                    style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%;">
                     <div data-testid="UserAvatar-Container-LinusTech"
-                         style="align-items: stretch; border: 0px solid black; box-sizing: border-box; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; overflow: visible; height: 48px; width: 48px;">
+                         style="align-items: stretch; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; overflow: visible; height: 48px; width: 48px;">
                       <div style="width: 48px; padding-bottom: 48px;"></div>
                       <div style="bottom: 0px; left: 0px; top: 0px; position: absolute; width: 48px; height: 48px;">
                         <div
-                          style="align-items: stretch; border: 0px solid black; box-sizing: border-box; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; z-index: 0; overflow: visible; width: 48px; height: 48px; left: 24px; top: 24px; transform: translateX(-50%) translateY(-50%);">
+                          style="align-items: stretch; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; overflow: visible; width: 48px; height: 48px; left: 24px; top: 24px; transform: translateX(-50%) translateY(-50%);">
                           <div style="width: 48px; padding-bottom: 48px;"></div>
                           <div style="bottom: 0px; left: 0px; top: 0px; position: absolute; width: 48px; height: 48px;">
                             <div
-                              style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; z-index: 0; border-radius: 9999px; overflow: hidden; left: -2px; top: -2px; height: calc(100% - -4px); width: calc(100% - -4px);">
-                              <a href="https://twitter.com/LinusTech" aria-hidden="true" role="link" tabindex="-1"
-                                 style="background-color: rgba(0, 0, 0, 0); font: inherit; list-style: none; margin: 0px; text-align: inherit; text-decoration-line: none; cursor: pointer; align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; width: 52px; height: 52px;   outline-style: none;">
+                              style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; border-radius: 9999px; overflow: hidden; left: -2px; top: -2px; height: calc(100% - -4px); width: calc(100% - -4px);">
+                              <span aria-hidden="true" role="link"
+                                 style="background-color: rgba(0, 0, 0, 0); list-style: none; margin: 0px; text-align: inherit; text-decoration-line: none; cursor: pointer; align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; min-height: 0px; min-width: 0px; padding: 0px; position: relative; width: 52px; height: 52px;   outline-style: none;">
                                 <div
-                                  style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; z-index: 0; border-radius: 9999px; overflow: hidden; left: 26px; top: 26px; transform: translateX(-50%) translateY(-50%); pointer-events: none !important; height: calc(100% - 4px); width: calc(100% - 4px);">
+                                  style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; border-radius: 9999px; overflow: hidden; left: 26px; top: 26px; transform: translateX(-50%) translateY(-50%); pointer-events: none !important; height: calc(100% - 4px); width: calc(100% - 4px);">
                                   <div
-                                    style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; width: 48px; height: 48px; background-color: rgba(0, 0, 0, 0);"></div>
+                                    style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; width: 48px; height: 48px; background-color: rgba(0, 0, 0, 0);"></div>
                                 </div>
                                 <div
-                                  style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; z-index: 0; border-radius: 9999px; overflow: hidden; left: 26px; top: 26px; transform: translateX(-50%) translateY(-50%); pointer-events: none !important; height: calc(100% - 4px); width: calc(100% - 4px);">
+                                  style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; border-radius: 9999px; overflow: hidden; left: 26px; top: 26px; transform: translateX(-50%) translateY(-50%); pointer-events: none !important; height: calc(100% - 4px); width: calc(100% - 4px);">
                                   <div
-                                    style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; background-color: rgb(0, 0, 0); width: 48px; height: 48px;"></div>
+                                    style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; background-color: rgb(0, 0, 0); width: 48px; height: 48px;"></div>
                                 </div>
                                 <div
-                                  style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; z-index: 0; border-radius: 9999px; overflow: hidden; background-color: rgb(0, 0, 0); left: 26px; top: 26px; transform: translateX(-50%) translateY(-50%); pointer-events: none !important; height: calc(100% - 4px); width: calc(100% - 4px);">
+                                  style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; border-radius: 9999px; overflow: hidden; background-color: rgb(0, 0, 0); left: 26px; top: 26px; transform: translateX(-50%) translateY(-50%); pointer-events: none !important; height: calc(100% - 4px); width: calc(100% - 4px);">
                                   <div
-                                    style="align-items: stretch; border: 0px solid black; box-sizing: border-box; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; overflow: hidden;">
+                                    style="align-items: stretch; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; overflow: hidden;">
                                     <div style="width: 48px; padding-bottom: 48px;"></div>
                                     <div
                                       style="bottom: 0px; left: 0px; top: 0px; position: absolute; width: 48px; height: 48px;">
                                       <div aria-label=""
-                                           style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; z-index: 0; overflow: hidden; inset: 0px;">
+                                           style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; overflow: hidden; inset: 0px;">
                                         <div
-                                          style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; z-index: -1; inset: 0px; width: 48px; height: 48px; background-color: rgba(0, 0, 0, 0); background-position: center center; background-repeat: no-repeat; background-size: cover; background-image: url(&quot;https://pbs.twimg.com/profile_images/1487114760826986498/9DiToHc0_normal.jpg&quot;);"
+                                          style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; z-index: -1; inset: 0px; width: 48px; height: 48px; background-color: rgba(0, 0, 0, 0); background-position: center center; background-repeat: no-repeat; background-size: cover; background-image: url(&quot;https://pbs.twimg.com/profile_images/1487114760826986498/9DiToHc0_normal.jpg&quot;);"
                                           id="tweet-pfp"></div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                                 <div
-                                  style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; z-index: 0; border-radius: 9999px; overflow: hidden; left: 26px; top: 26px; transform: translateX(-50%) translateY(-50%); height: calc(100% - 4px); width: calc(100% - 4px);">
+                                  style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: absolute; border-radius: 9999px; overflow: hidden; left: 26px; top: 26px; transform: translateX(-50%) translateY(-50%); height: calc(100% - 4px); width: calc(100% - 4px);">
                                   <div
                                     style="align-items: stretch;border: 0px solid black;box-sizing: border-box;display: flex;flex-basis: auto;flex-direction: column;flex-shrink: 0;margin: 0px;min-height: 0px;min-width: 0px;padding: 0px;position: relative;z-index: 0;width: 48px;height: 48px;outline-style: none;box-shadow: rgba(255, 255, 255, 0.03) 0px 0px 2px inset;"></div>
                                 </div>
-                              </a></div>
+                              </span></div>
                           </div>
                         </div>
                       </div>
@@ -137,61 +147,61 @@
               </div>
             </div>
             <div
-              style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex: 1 0 0px; flex-direction: column; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px 0px 12px; position: relative; z-index: 0; -webkit-box-flex: 1; -webkit-box-pack: center; justify-content: center;">
+              style="align-items: stretch; display: flex; flex: 1 0 0px; flex-direction: column; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px 0px 12px; position: relative; -webkit-box-flex: 1; -webkit-box-pack: center; justify-content: center;">
               <div
-                style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+                style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
                 <div
-                  style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px 0px 2px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+                  style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px 0px 2px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
                   <div
-                    style="-webkit-box-align: start; -webkit-box-orient: horizontal; align-items: start; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; -webkit-box-pack: justify; justify-content: space-between;">
+                    style="-webkit-box-align: start; -webkit-box-orient: horizontal; align-items: start; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; -webkit-box-pack: justify; justify-content: space-between;">
                     <div
-                      style="-webkit-box-align: baseline; -webkit-box-orient: horizontal; align-items: baseline; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+                      style="-webkit-box-align: baseline; -webkit-box-orient: horizontal; align-items: baseline; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
                       <div
-                        style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; max-width: 100%; outline-style: none;">
+                        style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%; outline-style: none;">
                         <div data-testid="User-Names"
-                             style="-webkit-box-align: center; -webkit-box-orient: horizontal; align-items: center; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; max-width: 100%; outline-style: none;">
+                             style="-webkit-box-align: center; -webkit-box-orient: horizontal; align-items: center; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%; outline-style: none;">
                           <div
-                            style="-webkit-box-align: center; -webkit-box-orient: horizontal; align-items: center; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; max-width: 100%;">
+                            style="-webkit-box-align: center; -webkit-box-orient: horizontal; align-items: center; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%;">
                             <div
-                              style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; max-width: 100%;">
-                              <a href="https://twitter.com/LinusTech" role="link"
-                                 style="background-color: rgba(0, 0, 0, 0); font: inherit; list-style: none; margin: 0px; text-align: inherit; text-decoration-line: none; cursor: pointer; align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; max-width: 100%; outline-style: none;">
+                              style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%;">
+                              <span role="link"
+                                 style="background-color: rgba(0, 0, 0, 0); list-style: none; margin: 0px; text-align: inherit; text-decoration-line: none; cursor: pointer; align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%; outline-style: none;">
                                 <div
-                                  style="-webkit-box-align: center; -webkit-box-orient: horizontal; align-items: center; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; max-width: 100%;">
+                                  style="-webkit-box-align: center; -webkit-box-orient: horizontal; align-items: center; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%;">
                                   <div dir="auto"
-                                       style="border: 0px solid black; box-sizing: border-box; color: rgb(231, 233, 234); display: flex; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 700; font-stretch: normal; line-height: 20px; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; margin: 0px; padding: 0px; white-space: nowrap; overflow-wrap: break-word; overflow: hidden; min-width: 0px; -webkit-box-align: center; align-items: center;">
+                                       style="color: var(--text-color); display: flex; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 700; font-stretch: normal; line-height: 20px; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; margin: 0px; padding: 0px; white-space: nowrap; overflow-wrap: break-word; overflow: hidden; min-width: 0px; -webkit-box-align: center; align-items: center;">
                                     <span
-                                      style="border: 0px solid black; box-sizing: border-box; color: inherit; display: inline; font: inherit; margin: 0px; padding: 0px; overflow-wrap: break-word; max-width: 100%; overflow: hidden; text-overflow: ellipsis; min-width: 0px;"><span
-                                      style="border: 0px solid black; box-sizing: border-box; color: inherit; display: inline; font: inherit; margin: 0px; padding: 0px; white-space: inherit; overflow-wrap: break-word; min-width: 0px;"
+                                      style="color: inherit; display: inline; margin: 0px; padding: 0px; overflow-wrap: break-word; max-width: 100%; overflow: hidden; text-overflow: ellipsis; min-width: 0px;"><span
+                                      style="color: inherit; display: inline; margin: 0px; padding: 0px; white-space: inherit; overflow-wrap: break-word; min-width: 0px;"
                                       id="tweet-username">Linus Tech Tips</span></span>
                                   </div>
                                 </div>
-                              </a></div>
+                              </span></div>
                           </div>
                           <div
-                            style="-webkit-box-orient: horizontal; align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px 0px 0px 4px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+                            style="-webkit-box-orient: horizontal; align-items: stretch; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px 0px 0px 4px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
                             <div
-                              style="-webkit-box-align: baseline; -webkit-box-orient: horizontal; align-items: baseline; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+                              style="-webkit-box-align: baseline; -webkit-box-orient: horizontal; align-items: baseline; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
                               <div
-                                style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; max-width: 100%;">
+                                style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%;">
                                 <span
-                                  style="background-color: rgba(0, 0, 0, 0); font: inherit; list-style: none; margin: 0px; text-align: inherit; text-decoration-line: none; cursor: pointer; align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; max-width: 100%; outline-style: none;">
+                                  style="background-color: rgba(0, 0, 0, 0); list-style: none; margin: 0px; text-align: inherit; text-decoration-line: none; cursor: pointer; align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 1; min-height: 0px; min-width: 0px; padding: 0px; position: relative; max-width: 100%; outline-style: none;">
                                   <div dir="ltr"
-                                       style="border: 0px solid black; box-sizing: border-box; color: rgb(113, 118, 123); display: inline; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 20px; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; margin: 0px; padding: 0px; white-space: nowrap; overflow-wrap: break-word; max-width: 100%; overflow: hidden; text-overflow: ellipsis; min-width: 0px; -webkit-box-orient: horizontal; flex-direction: row;">
+                                       style="color: var(--accent-color); display: inline; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 20px; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; margin: 0px; padding: 0px; white-space: nowrap; overflow-wrap: break-word; max-width: 100%; overflow: hidden; text-overflow: ellipsis; min-width: 0px; -webkit-box-orient: horizontal; flex-direction: row;">
                                     <span
-                                      style="border: 0px solid black; box-sizing: border-box; color: inherit; display: inline; font: inherit; margin: 0px; padding: 0px; white-space: inherit; overflow-wrap: break-word; min-width: 0px;"
+                                      style="color: inherit; display: inline; margin: 0px; padding: 0px; white-space: inherit; overflow-wrap: break-word; min-width: 0px;"
                                       id="tweet-at">@LinusTech</span>
                                   </div>
                                 </span></div>
                               <div dir="auto" aria-hidden="true"
-                                   style="border: 0px solid black; box-sizing: border-box; color: rgb(113, 118, 123); display: inline; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 20px; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; margin: 0px; padding: 0px 4px; overflow-wrap: break-word; min-width: 0px; flex-shrink: 0;">
+                                   style="color: var(--accent-color); display: inline; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 20px; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; margin: 0px; padding: 0px 4px; overflow-wrap: break-word; min-width: 0px; flex-shrink: 0;">
                                 <span
-                                  style="border: 0px solid black; box-sizing: border-box; color: inherit; display: inline; font: inherit; margin: 0px; padding: 0px; white-space: inherit; overflow-wrap: break-word; min-width: 0px;">·</span>
+                                  style="color: inherit; display: inline; margin: 0px; padding: 0px; white-space: inherit; overflow-wrap: break-word; min-width: 0px;">·</span>
                               </div>
                               <div
-                                style="-webkit-box-orient: horizontal; align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+                                style="-webkit-box-orient: horizontal; align-items: stretch; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
                                 <span dir="auto" aria-label="6 hours ago" role="link"
-                                      style="background-color: rgba(0, 0, 0, 0); color: rgb(113, 118, 123); font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 20px; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; list-style: none; margin: 0px; text-align: inherit; text-decoration-line: none; cursor: pointer; border: 0px solid black; box-sizing: border-box; display: inline-flex; padding: 0px; white-space: nowrap; overflow-wrap: break-word; min-width: 0px; flex-shrink: 0; flex-wrap: wrap; gap: 4px;"><span
+                                      style="background-color: rgba(0, 0, 0, 0); color: var(--accent-color); font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 20px; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; list-style: none; margin: 0px; text-align: inherit; text-decoration-line: none; cursor: pointer; display: inline-flex; padding: 0px; white-space: nowrap; overflow-wrap: break-word; min-width: 0px; flex-shrink: 0; flex-wrap: wrap; gap: 4px;"><span
                                   id="tweet-time">6h</span></span></div>
                             </div>
                           </div>
@@ -199,23 +209,23 @@
                       </div>
                     </div>
                     <div
-                      style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px 0px 0px 20px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+                      style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px 0px 0px 20px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
                       <div
-                        style="-webkit-box-align: center; -webkit-box-orient: horizontal; align-items: center; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+                        style="-webkit-box-align: center; -webkit-box-orient: horizontal; align-items: center; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
                         <div
-                          style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+                          style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
                           <div
-                            style="-webkit-box-orient: horizontal; align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0; -webkit-box-pack: start; justify-content: flex-start;">
-                            <div aria-expanded="false" aria-haspopup="menu" aria-label="More" role="button" tabindex="0"
+                            style="-webkit-box-orient: horizontal; align-items: stretch; display: flex; flex-basis: auto; flex-direction: row; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; -webkit-box-pack: start; justify-content: flex-start;">
+                            <div aria-expanded="false" aria-haspopup="menu" aria-label="More" role="button"
                                  data-testid="caret"
-                                 style="cursor: pointer; align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 20px; min-width: 0px; padding: 0px; position: relative; z-index: 0; overflow: visible; user-select: none; -webkit-box-pack: center; justify-content: center; outline-style: none;">
+                                 style="cursor: pointer; align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 20px; min-width: 0px; padding: 0px; position: relative; overflow: visible; user-select: none; -webkit-box-pack: center; justify-content: center; outline-style: none;">
                               <div dir="ltr"
-                                   style="border: 0px solid black;box-sizing: border-box;color: rgb(113, 118, 123);display: flex;font-variant-numeric: normal;font-variant-east-asian: normal;font-stretch: normal;line-height: 20px;font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif;margin: 0px;padding: 0px;white-space: nowrap;overflow-wrap: break-word;min-width: 0px;-webkit-box-align: center;align-items: center;-webkit-box-pack: start;justify-content: flex-start;">
+                                   style="border: 0px solid black;box-sizing: border-box;color: var(--accent-color);display: flex;font-variant-numeric: normal;font-variant-east-asian: normal;font-stretch: normal;line-height: 20px;font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif;margin: 0px;padding: 0px;white-space: nowrap;overflow-wrap: break-word;min-width: 0px;-webkit-box-align: center;align-items: center;-webkit-box-pack: start;justify-content: flex-start;">
                                 <div
                                   style="align-items: stretch;border: 0px solid black;box-sizing: border-box;display: inline-flex;flex-basis: auto;flex-direction: column;flex-shrink: 0;margin: 0px;min-height: 0px;min-width: 0px;padding: 0px;position: relative;z-index: 0;">
                                   <div
                                     style="fill: red !important;align-items: stretch;border: 0px solid black;box-sizing: border-box;display: inline-flex;flex-basis: auto;flex-direction: column;flex-shrink: 0;margin: -8px;min-height: 0px;min-width: 0px;padding: 0px;position: absolute;z-index: 0;border-radius: 9999px;inset: 0px;outline-style: none;background-color: rgba(0, 0, 0, 0);"></div>
-                                  <svg viewBox="0 0 24 24" aria-hidden="true" style="-webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0,0,0,0); pointer-events: auto; cursor: pointer; font: 14px -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Helvetica,Arial,sans-serif; word-wrap: break-word; line-height: 20px; font-size: 15px; font-weight: 400; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; white-space: nowrap; color: rgb(113, 118, 123); -webkit-box-direction: normal; display: inline-block; fill: currentcolor; height: 1.25em; max-width: 100%; position: relative; vertical-align: text-bottom; user-select: none; width: 1.25em;
+                                  <svg viewBox="0 0 24 24" aria-hidden="true" style="-webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0,0,0,0); pointer-events: auto; cursor: pointer; font: 14px -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Helvetica,Arial,sans-serif; word-wrap: break-word; line-height: 20px; font-size: 15px; font-weight: 400; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; white-space: nowrap; display: inline-block; fill: currentcolor; height: 1.25em; max-width: 100%; position: relative; vertical-align: text-bottom; user-select: none; width: 1.25em;
 ">
                                     <g>
                                       <circle cx="5" cy="12" r="2"></circle>
@@ -234,12 +244,12 @@
                 </div>
               </div>
               <div
-                style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+                style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
                 <div
-                  style="align-items: stretch; border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; z-index: 0;">
+                  style="align-items: stretch; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative;">
                   <div lang="en" dir="auto" data-testid="tweetText"
-                       style="border: 0px solid black; box-sizing: border-box; color: rgb(231, 233, 234); display: inline; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 20px; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; margin: 0px; padding: 0px; overflow-wrap: break-word; position: relative; min-width: 0px;"><span
-                    style="border: 0px solid black; box-sizing: border-box; color: inherit; display: inline; font: inherit; margin: 0px; padding: 0px; white-space: inherit; overflow-wrap: break-word; min-width: 0px; white-space: pre-wrap;"
+                       style="color: var(--text-color); display: inline; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 20px; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; margin: 0px; padding: 0px; overflow-wrap: break-word; position: relative; min-width: 0px;"><span
+                    style="color: inherit; display: inline; margin: 0px; padding: 0px; white-space: inherit; overflow-wrap: break-word; min-width: 0px; white-space: pre-wrap;"
                     id="tweet-text">I was troubleshooting a weird static noise coming from my headphones &amp; turns out I had a white noise tab in the background </span>
                   </div>
                 </div>

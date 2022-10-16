@@ -10,7 +10,10 @@ const randomAlphaNumericSpecialAllCase = (length, allowSpaces = false, allowSpec
     return result;
 };
 
-const set = (username, handle, pfp, time, text) => {
+const randomRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+const randomTo = (max) => randomRange(0, max);
+
+const setContent = (username, handle, pfp, time, text) => {
     $("#tweet-username").innerText = username;
     $("#tweet-at").innerText = handle;
     $("#tweet-pfp").style.backgroundImage = `url(${pfp})`;
@@ -18,14 +21,47 @@ const set = (username, handle, pfp, time, text) => {
     $("#tweet-text").innerText = text;
 };
 
-const randomize = () => {
-    const username = randomAlphaNumericSpecialAllCase(Math.floor(Math.random() * 30) + 1, true);
-    const handle = "@" + randomAlphaNumericSpecialAllCase(Math.floor(Math.random() * 15) + 1, false);
-    const pfp = "https://picsum.photos/200";
-    const time = Math.floor(Math.random() * 10) + "h";
-    const text = randomAlphaNumericSpecialAllCase(Math.floor(Math.random() * 300) + 1, true, false).trim();
-
-    set(username, handle, pfp, time, text);
+const COLOR_THEMES = {
+    LIGHT: 0,
+    DARK: {
+        "--background-color": "#15202b",
+        "--accent-color": "#8b98a5",
+        "--text-color": "#f7f9f9",
+    },
+    LIGHTS_OUT: {
+        "--background-color": "#000",
+        "--accent-color": "#71767B",
+        "--text-color": "#E7E9EA"
+    },
 };
 
-randomize();
+const setColorTheme = (theme) => {
+    for(const key in theme) {
+        document.documentElement.style.setProperty(key, theme[key]);
+    }
+};
+
+const setPadding = (width, paddingTop, paddingBottom, paddingLeft, paddingRight) => {
+    document.documentElement.style.setProperty("--base-width", width + "px");
+    document.documentElement.style.setProperty("--top-spacing", paddingTop + "px");
+    document.documentElement.style.setProperty("--bottom-spacing", paddingBottom + "px");
+    document.documentElement.style.setProperty("--left-spacing", paddingLeft + "px");
+    document.documentElement.style.setProperty("--right-spacing", paddingRight + "px");
+};
+
+const randomize = () => {
+    const username = randomAlphaNumericSpecialAllCase(randomRange(1, 30), true);
+    const handle = "@" + randomAlphaNumericSpecialAllCase(randomRange(1, 15), false);
+    const pfp = "https://picsum.photos/200";
+    const time = randomRange(1, 24) + "h";
+    const text = randomAlphaNumericSpecialAllCase(randomRange(1, 300), true, false).trim();
+
+    setContent(username, handle, pfp, time, text);
+
+    setPadding(randomRange(300, 600), randomRange(0, 50), randomRange(0, 50), randomRange(0, 50), randomRange(0, 50));
+
+    setColorTheme(COLOR_THEMES.DARK);
+};
+
+
+// randomize();
