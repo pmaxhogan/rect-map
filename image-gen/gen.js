@@ -113,10 +113,10 @@ randomize();
 
 const domRectToNormalObject = (rect) => {
     return {
-        x1: rect.left,
-        y1: rect.top,
-        x2: rect.right,
-        y2: rect.bottom,
+        x1: Math.round(rect.left),
+        y1: Math.round(rect.top),
+        x2: Math.round(rect.right),
+        y2: Math.round(rect.bottom),
     };
 };
 
