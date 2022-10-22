@@ -2,6 +2,8 @@ import puppeteer from "puppeteer";
 import * as path from "path";
 import { v4 as uuidv4 } from "uuid";
 import {readFile, writeFile, mkdir} from "fs/promises";
+import "./queue.js";
+import Queue from "./queue.js";
 
 async function makeDirectoyIfNotExists(dirPath) {
     try {
@@ -29,9 +31,9 @@ async function makeDirectoyIfNotExists(dirPath) {
         // devtools: true,
     });
 
-    const proms = [];
-    for(let i = 0; i < 500; i++) {
-        proms.push((async () => {
+    const functions = [];
+    for(let i = 0; i < 10000; i++) {
+        functions.push(async () => {
             const id = uuidv4()
             const firstTwo = id.substring(0, 2);
             const rest = id.substring(2);
@@ -50,10 +52,12 @@ async function makeDirectoyIfNotExists(dirPath) {
 
             await makeDirectoyIfNotExists(`images/${firstTwo}`);
             await element.screenshot({path: `images/${firstTwo}/${rest}.png`});
-        })());
+        });
     }
 
-    await Promise.all(proms);
+    const queue = new Queue(functions, 50);
+
+    await queue.awaitDone();
 
     await writeFile("data.json", JSON.stringify(data));
 

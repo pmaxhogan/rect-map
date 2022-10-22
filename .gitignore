@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+/image-gen/images/
+/image-gen/data.json
+/image-gen/data.csv
