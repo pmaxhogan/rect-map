@@ -58,8 +58,8 @@ const flushEvery = 500;
             const xml = `
             <annotation>
                 <folder>images</folder>
-                <filename>${id}.png</filename>
-                <path>images/${id}.png</path>
+                <filename>${id}.jpeg</filename>
+                <path>images/${id}.jpeg</path>
                 <source>
                     <database>Unknown</database>
                 </source>
@@ -105,7 +105,7 @@ const flushEvery = 500;
     }
 
 
-    const queue = new Queue(functions, 150);
+    const queue = new Queue(functions, 32);
 
     await queue.awaitDone();
 
