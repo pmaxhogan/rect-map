@@ -19,7 +19,8 @@ const header = "id,names-x1,names-y1,names-x2,names-y2,pfp-x1,pfp-y1,pfp-x2,pfp-
 const flushEvery = 500;
 
 (async () => {
-    await makeDirectoyIfNotExists("images");
+    await makeDirectoyIfNotExists("images/training");
+    await makeDirectoyIfNotExists("images/testing");
 
     try {
         await readFile("data.csv", "utf8");
@@ -35,21 +36,12 @@ const flushEvery = 500;
         // devtools: true,
     });
 
-    let data = "";
-
-    async function flush(){
-        console.log("Flushing data", data.length);
-        await appendFile("data.csv", data);
-        data = "";
-        console.log("Flushed data");
-    }
 
     const functions = [];
-    for(let i = 0; i < 100000; i++) {
+    for(let i = 0; i < 1000; i++) {
         functions.push(async () => {
-            const id = uuidv4()
-            const firstTwo = id.substring(0, 2);
-            const rest = id.substring(2);
+            const id = uuidv4();
+            const base = `images/${i % 10 === 0 ? "testing" : "training"}`;
 
             const page = await browser.newPage();
 
@@ -61,14 +53,52 @@ const flushEvery = 500;
             const boxes = await page.evaluate(() => getBoundingBoxes());
 
 
-            await makeDirectoyIfNotExists(`images/${firstTwo}`);
-            await element.screenshot({path: `images/${firstTwo}/${rest}.png`});
+            await element.screenshot({path: `${base}/${id}.jpeg`});
 
-            data += `${id},${boxes.names.x1},${boxes.names.y1},${boxes.names.x2},${boxes.names.y2},${boxes.pfp.x1},${boxes.pfp.y1},${boxes.pfp.x2},${boxes.pfp.y2}\n`;
+            const xml = `
+            <annotation>
+                <folder>images</folder>
+                <filename>${id}.png</filename>
+                <path>images/${id}.png</path>
+                <source>
+                    <database>Unknown</database>
+                </source>
+                <size>
+                    <width>600</width>
+                    <height>450</height>
+                    <depth>3</depth>
+                </size>
+                <segmented>0</segmented>
+                <object>
+                    <name>names</name>
+                    <pose>Unspecified</pose>
+                    <truncated>0</truncated>
+                    <difficult>0</difficult>
+                    <bndbox>
+                        <xmin>${boxes.names.x1}</xmin>
+                        <ymin>${boxes.names.y1}</ymin>
+                        <xmax>${boxes.names.x2}</xmax>
+                        <ymax>${boxes.names.y2}</ymax>
+                    </bndbox>
+                </object>
+                <object>
+                    <name>pfp</name>
+                    <pose>Unspecified</pose>
+                    <truncated>0</truncated>
+                    <difficult>0</difficult>
+                    <bndbox>
+                        <xmin>${boxes.pfp.x1}</xmin>
+                        <ymin>${boxes.pfp.y1}</ymin>
+                        <xmax>${boxes.pfp.x2}</xmax>
+                        <ymax>${boxes.pfp.y2}</ymax>
+                    </bndbox>
+                </object>
+            </annotation>
+            `;
 
-            if(i % flushEvery === flushEvery - 1) {
-                await flush();
-            }
+            await writeFile(`${base}/${id}.xml`, xml);
+
+
 
             await page.close();
         });
@@ -78,9 +108,6 @@ const flushEvery = 500;
     const queue = new Queue(functions, 150);
 
     await queue.awaitDone();
-    await flush();
-
-    await writeFile("data.json", data);
 
     // await page.evaluate(() => {
     //     debugger;
