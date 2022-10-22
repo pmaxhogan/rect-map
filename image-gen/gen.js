@@ -44,7 +44,7 @@ const COLOR_THEMES = {
 };
 
 const setColorTheme = (theme) => {
-    for(const key in theme) {
+    for (const key in theme) {
         document.documentElement.style.setProperty(key, theme[key]);
     }
 };
@@ -111,10 +111,19 @@ const randomize = () => {
 
 randomize();
 
+const domRectToNormalObject = (rect) => {
+    return {
+        x1: rect.left,
+        y1: rect.top,
+        x2: rect.right,
+        y2: rect.bottom,
+    };
+};
+
 
 const getBoundingBoxes = () => {
-    const pfp = $("#tweet-pfp").getBoundingClientRect();
-    const names = $("#tweet-names").getBoundingClientRect();
+    const pfp = domRectToNormalObject($("#tweet-pfp").getBoundingClientRect());
+    const names = domRectToNormalObject($("#tweet-names").getBoundingClientRect());
 
     return {pfp, names};
-}
+};

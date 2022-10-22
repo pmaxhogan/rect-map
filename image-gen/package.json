@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "type": "module",
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "puppeteer": "^19.0.0"
+    "puppeteer": "^19.0.0",
+    "uuid": "^9.0.0"
   }
 }
